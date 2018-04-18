@@ -5,7 +5,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Login from '../containers/Login';
-import ErrorPage from '../containers/ErrorPage';
+// import ErrorPage from '../containers/ErrorPage';
 import NoTenants from '../containers/NoTenants';
 
 export default class LogoPage extends Component {
@@ -16,7 +16,7 @@ export default class LogoPage extends Component {
                 </div>
                 <Switch>
                     <Route path='/login' component={Login}/>
-                    <Route path='/error' component={ErrorPage}/>
+                    {/*<Route path='/error' component={ErrorPage}/>*/}
                     <Route path='/noTenants' component={NoTenants}/>
                 </Switch>
             </div>
